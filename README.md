@@ -1,1 +1,1 @@
-personal portfolio by Ayush Thakur created by Astro
+personal portfolio by Ayush Thakur created using Astro
