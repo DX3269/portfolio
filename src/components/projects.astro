@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import grantpilotImg from "../../public/grantpilot.jpg";
-import ragChatbotImg from "../../public/rag-chatbot.svg";
-import listingAutomationImg from "../../public/listing-automation.svg";
-import shopifyIntegrationImg from "../../public/shopify-integration.svg";
+import ragChatbotImg from "../../public/rag-chatbot.webp";
+import debenhamsImg from "../../public/debenhams.png";
+import shopifyImg from "../../public/shopify.jpg";
 
 interface Project {
   title: string;
@@ -14,7 +14,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "GrantPilot — AI Recommendation & Copilot Platform",
+    title: "GrantPilot AI Recommendation & Copilot Platform",
     description:
       "Full-stack SaaS featuring a deterministic grant recommendation engine with weighted scoring, and a context-aware Gemini AI Copilot that delivers cited responses.",
     tags: ["React", "TypeScript", "FastAPI", "SQLAlchemy", "Gemini API"],
@@ -32,14 +32,14 @@ const projects: Project[] = [
     description:
       "Automated data workflows using YAML rules, pandas, and MySQL to extract, transform, validate, and export high-volume product listings for Debenhams and Allegro templates.",
     tags: ["Python", "MySQL", "pandas", "openpyxl", "YAML"],
-    image: listingAutomationImg as ImageMetadata,
+    image: debenhamsImg as ImageMetadata,
   },
   {
     title: "Shopify Custom App & Order Integration",
     description:
       "Custom Shopify application and backend pipeline automating order management workflows, Liquid theme customization, and end-to-end e-commerce API integrations.",
     tags: ["Shopify CLI", "Liquid", "Python", "REST APIs", "Postman"],
-    image: shopifyIntegrationImg as ImageMetadata,
+    image: shopifyImg as ImageMetadata,
   },
 ];
 ---
